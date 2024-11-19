@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f7f7f7;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: orange;
+            color:  white;
+            border: none;
+            
+             
+        }
+        .label{
+
+            color: orange;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container m-5">
+        <form action="logins" method="POST">
+
+            {% csrf_token %}
+
+            <label for="" class="label"><b>USERNAME</b></label>
+            <input type="text" name="username" class="form-control" id="password"  name="password"  placeholder="enter a password" required>
+            <label for="" class="form-label">PASSWORD</label>
+            <input type="password" name="password" class="form-control" id="password"  name="password"  placeholder="enter a password" required> <br> 
+            <BUtton type="submit" class="button">LOGIN</BUtton>
+
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    
+</body>
+</html>

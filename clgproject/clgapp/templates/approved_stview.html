@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container m-5">
+
+        <table class=" table table-bordered table-primary">
+
+            <tr>
+                <th>ID</th>
+                <th>FIRSTNAME</th>
+                <th>LASTNAME</th>
+                <th>EMAIL</th>
+                <th>USERNAME</th>
+            </tr>
+            {% for i in x %}
+
+            <tr>
+                <td>{{i.first_name}}</td>
+                <td>{{i.last_name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.username}}</td>
+                <td><a href="approved_stview"></a></td>
+                
+
+
+
+            </tr>
+
+            {% endfor %}
+
+
+        </table>
+
+    </div>
+</body>
+</html>
